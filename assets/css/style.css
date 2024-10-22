@@ -19,6 +19,10 @@ h1, h2 {
     color: #184f63;   /* dark-blue */
 }
 
+.sharp-corners,
+.sharp-corners * {
+    border-radius: 0;
+}
 
 /* Header */
 
@@ -40,8 +44,28 @@ h1, h2 {
     background-color: #dbdcde; /* light grey */
 }
 
+#portfolio .card-title {
+    color: #1f7798; /* mid-blue */
+    font-size: 1.2rem;
+}
+
+#portfolio .btn:hover {
+    background-color: #1f7798; /* mid-blue */
+}
+
+#portfolio .card-text {
+    min-height: 120px;
+}
 
 /* Contact */
 #contact {
     background-color: white;
+}
+
+/* Media queiries */
+@media screen and (min-width: 1200px) {
+    /* Fixed card-height on larger screens */
+    #portfolio .card-text {
+        min-height: auto;
+    }
 }
